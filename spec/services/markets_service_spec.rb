@@ -6,7 +6,7 @@ RSpec.describe MarketService do
   end
 
   describe ".conn" do
-    it "connects to the backend api" do
+    it "connects to the backend api", :vcr do
       expect(MarketService.conn).to be_a(Faraday::Connection)
       expect(MarketService.conn.port).to eq(3000)
       expect(MarketService.conn.url_prefix).to be_a(URI::HTTP)
@@ -15,7 +15,7 @@ RSpec.describe MarketService do
   end
 
   describe ".get_url" do
-    it "makes a request and parses the data from get requests into a hash" do
+    it "makes a request and parses the data from get requests into a hash", :vcr do
       market_data = MarketService.get_url("/api/v0/markets")
 
       expect(market_data).to be_a(Hash)
@@ -24,7 +24,7 @@ RSpec.describe MarketService do
 
 
   describe ".get_all_markets" do
-    it "returns all market data" do
+    it "returns all market data", :vcr do
     # faraday_response = MarketService.get_all_markets
     # expect(faraday_response).to be_a(Faraday::Response)
     # expect(faraday_response.status).to eq(200)
@@ -49,14 +49,23 @@ RSpec.describe MarketService do
 
         attributes = market[:attributes]
         expect(attributes[:name]).to be_a(String)
-        expect(attributes[:street]).to be_a(String)
-        expect(attributes[:city]).to be_a(String)
-        expect(attributes[:county]).to be_a(String)
         expect(attributes[:state]).to be_a(String)
-        expect(attributes[:zip]).to be_a(String) || expect(attributes[:zip]).to be_a(NilClass) # How would you test this?
-        expect(attributes[:lat]).to be_a(String)
-        expect(attributes[:lon]).to be_a(String)
         expect(attributes[:vendor_count]).to be_an(Integer)
+
+        def attributes(attribute_data)
+          if attribute_data.nil?
+            expect(attribute_data).to be_a(NilClass)
+          else
+            expect(attribute_data).to be_a(String)
+          end
+        end
+
+        attributes(attributes[:city])
+        attributes(attributes[:street])
+        attributes(attributes[:county])
+        attributes(attributes[:zip])
+        attributes(attributes[:lat])
+        attributes(attributes[:lon])
       end
     end
   end

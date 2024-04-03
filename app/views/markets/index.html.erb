@@ -1,0 +1,17 @@
+
+  <table id="markets-list">
+    <tr>
+      <th>Name</th>
+      <th>City</th>
+      <th>State</th>
+      <th></th>
+    </tr>
+    <% @markets_facade.all_markets.each do |market| %>
+      <tr>
+        <td><%= market.name %></td>
+        <td><%= market.city %></td>
+        <td><%= market.state %></td>
+        <td><%= button_to "More Info", market_path(market), method: :get  %></td>
+      </tr>
+    <% end %>
+  </table>

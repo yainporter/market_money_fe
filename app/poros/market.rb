@@ -11,17 +11,15 @@ class Market
               :vendor_count
 
   def initialize(hash_data)
-    hash_data[:data].each do |data|
-      @id = data[:id]
-      @name = data[:attributes][:name]
-      @street = data[:attributes][:street]
-      @city = data[:attributes][:city]
-      @county = data[:attributes][:county]
-      @state = data[:attributes][:state]
-      @zip = data[:attributes][:zip]
-      @lat = data[:attributes][:lat]
-      @lon = data[:attributes][:lon]
-      @vendor_count = data[:attributes][:vendor_count]
-    end
+      @id = hash_data[:id]
+      @name = hash_data[:attributes][:name]
+      @street = hash_data[:attributes][:street]
+      @city = hash_data[:attributes][:city]
+      @county = hash_data[:attributes][:county]
+      @state = hash_data[:attributes][:state]
+      @zip = hash_data[:attributes][:zip]
+      @lat = hash_data[:attributes][:lat]
+      @lon = hash_data[:attributes][:lon]
+      @vendor_count = hash_data[:attributes][:vendor_count]
   end
 end

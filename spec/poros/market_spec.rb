@@ -8,8 +8,6 @@ RSpec.describe Market do
   describe "Existence" do
     it "takes in a hash argument for attributes" do
       data = {
-        data: [
-          {
             id: "1234",
             type: "market",
             attributes: {
@@ -23,8 +21,6 @@ RSpec.describe Market do
               lon: "-50.123",
               vendor_count: 1
             }
-          }
-        ]
       }
 
       market = Market.new(data)
