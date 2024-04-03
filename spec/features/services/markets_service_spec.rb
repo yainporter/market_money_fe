@@ -53,7 +53,7 @@ RSpec.describe MarketService do
         expect(attributes[:city]).to be_a(String)
         expect(attributes[:county]).to be_a(String)
         expect(attributes[:state]).to be_a(String)
-        expect(attributes[:zip]).to be_a(String) || expect(attributes[:zip]).to be_a(NilClass)
+        expect(attributes[:zip]).to be_a(String) || expect(attributes[:zip]).to be_a(NilClass) # How would you test this?
         expect(attributes[:lat]).to be_a(String)
         expect(attributes[:lon]).to be_a(String)
         expect(attributes[:vendor_count]).to be_an(Integer)
