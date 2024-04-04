@@ -37,3 +37,5 @@
 # Ignore simple_cov reports
 
 echo coverage >> .gitignore
+coverage/.resultset.json
+coverage/index.html

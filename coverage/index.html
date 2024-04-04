@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2024-04-03T14:58:38-07:00">2024-04-03T14:58:38-07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2024-04-03T17:15:01-07:00">2024-04-03T17:15:01-07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -30,7 +30,7 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         445.21
+         434.37
        </span>
     </span> hits/line
     )
@@ -43,8 +43,8 @@
   </div>
 
   <div class="t-line-summary">
-    <b>120</b> relevant lines,
-    <span class="green"><b>120</b> lines covered</span> and
+    <b>123</b> relevant lines,
+    <span class="green"><b>123</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed. </span>
     (<span class="green">
   100.0%
@@ -84,11 +84,11 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#dc7192abcf642924ac62559d0ee9fb48a645ecbf" class="src_link" title="app/controllers/markets_controller.rb">app/controllers/markets_controller.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">5</td>
-            <td class="cell--number">3</td>
-            <td class="cell--number">3</td>
+            <td class="cell--number">9</td>
+            <td class="cell--number">4</td>
+            <td class="cell--number">4</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">1.33</td>
+            <td class="cell--number">1.25</td>
             
           </tr>
         
@@ -128,11 +128,11 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#c7f08703ad494f7da5e36a9df494d8f8b36994b7" class="src_link" title="spec/features/markets/index_spec.rb">spec/features/markets/index_spec.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">43</td>
-            <td class="cell--number">27</td>
-            <td class="cell--number">27</td>
+            <td class="cell--number">44</td>
+            <td class="cell--number">29</td>
+            <td class="cell--number">29</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">32.41</td>
+            <td class="cell--number">30.21</td>
             
           </tr>
         
@@ -242,8 +242,8 @@
     
 
     <div class="t-line-summary">
-      <b>3</b> relevant lines.
-      <span class="green"><b>3</b> lines covered</span> and
+      <b>4</b> relevant lines.
+      <span class="green"><b>4</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -300,6 +300,50 @@
       
         <div>
           <li class="never" data-hits="" data-linenumber="5">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="6">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def show</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="7">
+            
+            
+
+            
+
+            <code class="ruby">    </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="8">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="9">
             
             
 
@@ -971,8 +1015,8 @@
     
 
     <div class="t-line-summary">
-      <b>27</b> relevant lines.
-      <span class="green"><b>27</b> lines covered</span> and
+      <b>29</b> relevant lines.
+      <span class="green"><b>29</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -1336,13 +1380,13 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="33">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="33">
+            <span class="hits">1</span>
             
 
-            <code class="ruby"></code>
+            
+
+            <code class="ruby">        expect(page).to have_button(&quot;More Info&quot;)</code>
           </li>
         </div>
       
@@ -1353,18 +1397,18 @@
 
             
 
-            <code class="ruby">        all(&quot;tr&quot;).each do |row|</code>
+            <code class="ruby">        expect(page.current_path).to eq(markets_path)</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="35">
-            <span class="hits">2</span>
+          <li class="never" data-hits="" data-linenumber="35">
+            
             
 
             
 
-            <code class="ruby">          if row.has_button?</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
@@ -1375,7 +1419,7 @@
 
             
 
-            <code class="ruby">            row.click_button(&quot;More Info&quot;)</code>
+            <code class="ruby">        buttons = all(&quot;td.market-button&quot;)</code>
           </li>
         </div>
       
@@ -1386,29 +1430,29 @@
 
             
 
-            <code class="ruby">            expect(page.current_path).to_not eq(markets_path)</code>
+            <code class="ruby">        buttons.each do |button|</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="38">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="38">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">          end</code>
+            
+
+            <code class="ruby">          button.click_button(&quot;More Info&quot;)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="39">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="39">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">        end</code>
+            
+
+            <code class="ruby">          expect(page.current_path).to_not eq(markets_path)</code>
           </li>
         </div>
       
@@ -1419,7 +1463,7 @@
 
             
 
-            <code class="ruby">      end</code>
+            <code class="ruby">        end</code>
           </li>
         </div>
       
@@ -1430,7 +1474,7 @@
 
             
 
-            <code class="ruby">    end</code>
+            <code class="ruby">      end</code>
           </li>
         </div>
       
@@ -1441,12 +1485,23 @@
 
             
 
-            <code class="ruby">  end</code>
+            <code class="ruby">    end</code>
           </li>
         </div>
       
         <div>
           <li class="never" data-hits="" data-linenumber="43">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="44">
             
             
 

@@ -30,12 +30,13 @@ RSpec.describe "Markets Index Page", type: :feature do
         expect(page).to have_selector("th", text: "State")
         expect(page).to have_selector("th", text: "")
         expect(page).to have_selector("td", text: "More Info")
+        expect(page).to have_button("More Info")
+        expect(page.current_path).to eq(markets_path)
 
-        all("tr").each do |row|
-          if row.has_button?
-            row.click_button("More Info")
-            expect(page.current_path).to_not eq(markets_path)
-          end
+        buttons = all("td.market-button")
+        buttons.each do |button|
+          button.click_button("More Info")
+          expect(page.current_path).to_not eq(markets_path)
         end
       end
     end
