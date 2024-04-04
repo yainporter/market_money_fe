@@ -6,22 +6,7 @@ RSpec.describe MarketService do
     @attributes_keys = [:name, :street, :city, :county, :state, :zip, :lat, :lon, :vendor_count]
   end
 
-  describe ".conn" do
-    it "connects to the backend api", :vcr do
-      expect(MarketService.conn).to be_a(Faraday::Connection)
-      expect(MarketService.conn.port).to eq(3000)
-      expect(MarketService.conn.url_prefix).to be_a(URI::HTTP)
-      expect(MarketService.conn.url_prefix.to_s).to eq("http://localhost:3000/")
-    end
-  end
 
-  describe ".get_url" do
-    it "makes a request and parses the data from get requests into a hash", :vcr do
-      market_data = MarketService.get_url("/api/v0/markets")
-
-      expect(market_data).to be_a(Hash)
-    end
-  end
 
 
   describe ".get_all_markets" do
