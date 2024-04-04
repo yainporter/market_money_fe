@@ -3,7 +3,7 @@
 <p>Contact Info: </p>
 <p>Name: <%= @vendor.contact_name %></p>
 <p>Phone: <%= @vendor.contact_phone %></p>
-<% if @vendor.credit_accepted == true%>
+<% if @vendor.credit_accepted.is_a?(TrueClass) %>
 <p>Credit Accepted? YES</p>
 <% else %>
 <p>Credit Accepted? NO</p>
