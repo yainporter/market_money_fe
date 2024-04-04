@@ -3,9 +3,16 @@ class VendorFacade
     @vendor_id = vendor_id
   end
 
-  def one_vendor
-    Vendor.new(VendorService.get_vendor(@vendor_id)[:data])
-  end
+  # def one_vendor
+  #   vendor_data = VendorService.get_vendor(@vendor_id)[:data]
+  #   Vendor.new(vendor_data)
+  # end
 
-\
+  def vendors(market_id)
+    vendors_data = VendorService.get_all_vendors(market_id)[:data]
+
+    vendors_data.map do |vendor|
+      Vendor.new(vendor)
+    end
+  end
 end

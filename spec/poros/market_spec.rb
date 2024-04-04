@@ -19,7 +19,7 @@ RSpec.describe Market do
               zip: "12345",
               lat: "32.343",
               lon: "-50.123",
-              vendor_count: 1
+              vendor_count: 1,
             }
       }
 
