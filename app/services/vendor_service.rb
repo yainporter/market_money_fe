@@ -1,6 +1,7 @@
 class VendorService
-  def self.conn
-    Faraday.new(url: "http://localhost:3000")
+  extend Serviceable
 
+  def self.get_vendor(id)
+    get_url("/api/v0/vendors/#{id}")
   end
 end

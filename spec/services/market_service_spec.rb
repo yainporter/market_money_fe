@@ -6,16 +6,8 @@ RSpec.describe MarketService do
     @attributes_keys = [:name, :street, :city, :county, :state, :zip, :lat, :lon, :vendor_count]
   end
 
-
-
-
   describe ".get_all_markets" do
     it "returns all market data", :vcr do
-    # faraday_response = MarketService.get_all_markets
-    # expect(faraday_response).to be_a(Faraday::Response)
-    # expect(faraday_response.status).to eq(200)
-    # expect(faraday_response.body).to be_a(String)
-
       return_data = MarketService.get_all_markets
       expect(return_data).to be_a(Hash)
       expect(return_data[:data]).to be_present
