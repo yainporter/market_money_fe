@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2024-04-04T09:02:53-07:00">2024-04-04T09:02:53-07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2024-04-04T09:09:50-07:00">2024-04-04T09:09:50-07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -30,7 +30,7 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         298.22
+         288.68
        </span>
     </span> hits/line
     )
@@ -39,12 +39,12 @@
   <a name="AllFiles"></a>
 
   <div>
-    <b>11</b> files in total.
+    <b>12</b> files in total.
   </div>
 
   <div class="t-line-summary">
-    <b>181</b> relevant lines,
-    <span class="green"><b>181</b> lines covered</span> and
+    <b>187</b> relevant lines,
+    <span class="green"><b>187</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed. </span>
     (<span class="green">
   100.0%
@@ -89,6 +89,17 @@
             <td class="cell--number">5</td>
             <td class="cell--number">0</td>
             <td class="cell--number">1.40</td>
+            
+          </tr>
+        
+          <tr class="t-file">
+            <td class="strong t-file__name"><a href="#b45325fa37975495b35307bea82253f2f46df563" class="src_link" title="app/controllers/vendors_controller.rb">app/controllers/vendors_controller.rb</a></td>
+            <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="cell--number">5</td>
+            <td class="cell--number">2</td>
+            <td class="cell--number">2</td>
+            <td class="cell--number">0</td>
+            <td class="cell--number">1.00</td>
             
           </tr>
         
@@ -150,9 +161,9 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#ab0880df8fe23c42f7bbcc3d048ed7243dc4998d" class="src_link" title="spec/features/markets/show_spec.rb">spec/features/markets/show_spec.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">13</td>
-            <td class="cell--number">7</td>
-            <td class="cell--number">7</td>
+            <td class="cell--number">18</td>
+            <td class="cell--number">11</td>
+            <td class="cell--number">11</td>
             <td class="cell--number">0</td>
             <td class="cell--number">1.00</td>
             
@@ -377,6 +388,92 @@
       
         <div>
           <li class="never" data-hits="" data-linenumber="9">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="b45325fa37975495b35307bea82253f2f46df563">
+  <div class="header">
+    <h3>app/controllers/vendors_controller.rb</h3>
+    <h4>
+      <span class="green">
+  100.0%
+</span>
+
+      lines covered
+    </h4>
+
+    
+
+    <div class="t-line-summary">
+      <b>2</b> relevant lines.
+      <span class="green"><b>2</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+
+    
+
+  </div>
+
+  <pre>
+    <ol>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="1">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">class VendorsController &lt; ApplicationController</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="2">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def show</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="3">
+            
+            
+
+            
+
+            <code class="ruby">    </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="4">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="5">
             
             
 
@@ -2034,8 +2131,8 @@
     
 
     <div class="t-line-summary">
-      <b>7</b> relevant lines.
-      <span class="green"><b>7</b> lines covered</span> and
+      <b>11</b> relevant lines.
+      <span class="green"><b>11</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -2152,12 +2249,67 @@
 
             
 
-            <code class="ruby">      expect(page).to have_link(&quot;&quot;)</code>
+            <code class="ruby">      save_and_open_page</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="11">
+          <li class="covered" data-hits="1" data-linenumber="11">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(page).to have_link(&quot;Rocky Mountain Oyster Company&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="12">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(all(&quot;a&quot;).count).to eq(6)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="13">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="14">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      click_link(&quot;Rocky Mountain Oyster Company&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="15">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(page.current_path).to eq(&quot;/vendors/55273&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="16">
             
             
 
@@ -2168,7 +2320,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="12">
+          <li class="never" data-hits="" data-linenumber="17">
             
             
 
@@ -2179,7 +2331,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="13">
+          <li class="never" data-hits="" data-linenumber="18">
             
             
 

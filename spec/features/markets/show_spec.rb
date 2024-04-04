@@ -7,7 +7,12 @@ RSpec.describe "Market Show Page", type: :feature do
 
   describe "User Story 2 - Display" do
     it "has market info and link to the Vendor show page", :vcr do
-      expect(page).to have_link("")
+      save_and_open_page
+      expect(page).to have_link("Rocky Mountain Oyster Company")
+      expect(all("a").count).to eq(6)
+
+      click_link("Rocky Mountain Oyster Company")
+      expect(page.current_path).to eq("/vendors/55273")
     end
   end
 end
