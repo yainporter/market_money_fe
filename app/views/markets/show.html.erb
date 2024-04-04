@@ -1,12 +1,12 @@
-<h1><%= @market_facade.one_market.name %></h1>
+<h1><%= @market.name %></h1>
 <div>
-  <p><%= @market_facade.one_market.street %></p>
-  <p><%= @market_facade.one_market.city %>, <%= @market_facade.one_market.state %> <%= @market_facade.one_market.zip %></p>
+  <p><%= @market.street %></p>
+  <p><%= @market.city %>, <%= @market.state %> <%= @market.zip %></p>
 </div>
 
 <h3>Vendors at our Market:</h3>
 <ul>
-  <% @market_facade.vendors.each do |vendor| %>
-    <li><%= link_to vendor.name, vendor_path(vendor.id), data: { turbo_method: :get } %></li>
+  <% @vendors.each do |vendor| %>
+    <li><%= link_to vendor.name, market_vendor_path(@market.id, vendor.id), data: { turbo_method: :get } %></li>
   <% end %>
 </ul>

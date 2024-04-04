@@ -5,8 +5,8 @@
         "lines": [
           1,
           1,
-          7,
-          7,
+          9,
+          9,
           null,
           null,
           1,
@@ -16,8 +16,8 @@
           null,
           null,
           1,
-          11,
-          11,
+          3,
+          3,
           null,
           null,
           1,
@@ -100,6 +100,29 @@
           null
         ]
       },
+      "/Users/yainporter/turing_work/3mod/projects/market_money_fe/spec/features/vendors/show_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
       "/Users/yainporter/turing_work/3mod/projects/market_money_fe/spec/poros/market_spec.rb": {
         "lines": [
           1,
@@ -160,16 +183,16 @@
           null,
           null,
           1,
-          2550,
-          2550,
-          2550,
-          2550,
-          2550,
-          2550,
-          2550,
-          2550,
-          2550,
-          2550,
+          2542,
+          2542,
+          2542,
+          2542,
+          2542,
+          2542,
+          2542,
+          2542,
+          2542,
+          2542,
           null,
           null
         ]
@@ -330,24 +353,24 @@
           1,
           null,
           1,
-          20,
-          null,
-          null,
-          1,
-          20,
-          20,
-          null,
-          null,
-          1,
-          4,
-          null,
-          null,
-          1,
-          4,
+          12,
           null,
           null,
           1,
           12,
+          12,
+          null,
+          null,
+          1,
+          4,
+          null,
+          null,
+          1,
+          4,
+          null,
+          null,
+          1,
+          4,
           null,
           null
         ]
@@ -360,6 +383,8 @@
           null,
           null,
           1,
+          2,
+          2,
           2,
           null,
           null
@@ -375,12 +400,12 @@
         "lines": [
           1,
           1,
-          null,
+          2,
           null,
           null
         ]
       }
     },
-    "timestamp": 1712246990
+    "timestamp": 1712247918
   }
 }

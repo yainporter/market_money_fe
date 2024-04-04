@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2024-04-04T09:09:50-07:00">2024-04-04T09:09:50-07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2024-04-04T09:25:18-07:00">2024-04-04T09:25:18-07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -23,14 +23,14 @@
     <span class="group_name">All Files</span>
     (<span class="covered_percent">
       <span class="green">
-  100.0%
+  97.52%
 </span>
 
      </span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         288.68
+         266.7
        </span>
     </span> hits/line
     )
@@ -39,15 +39,15 @@
   <a name="AllFiles"></a>
 
   <div>
-    <b>12</b> files in total.
+    <b>13</b> files in total.
   </div>
 
   <div class="t-line-summary">
-    <b>187</b> relevant lines,
-    <span class="green"><b>187</b> lines covered</span> and
-    <span class="red"><b>0</b> lines missed. </span>
+    <b>202</b> relevant lines,
+    <span class="green"><b>197</b> lines covered</span> and
+    <span class="red"><b>5</b> lines missed. </span>
     (<span class="green">
-  100.0%
+  97.52%
 </span>
 )
   </div>
@@ -84,11 +84,11 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#dc7192abcf642924ac62559d0ee9fb48a645ecbf" class="src_link" title="app/controllers/markets_controller.rb">app/controllers/markets_controller.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">9</td>
-            <td class="cell--number">5</td>
-            <td class="cell--number">5</td>
+            <td class="cell--number">11</td>
+            <td class="cell--number">7</td>
+            <td class="cell--number">7</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">1.40</td>
+            <td class="cell--number">1.57</td>
             
           </tr>
         
@@ -96,10 +96,10 @@
             <td class="strong t-file__name"><a href="#b45325fa37975495b35307bea82253f2f46df563" class="src_link" title="app/controllers/vendors_controller.rb">app/controllers/vendors_controller.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
             <td class="cell--number">5</td>
-            <td class="cell--number">2</td>
-            <td class="cell--number">2</td>
+            <td class="cell--number">3</td>
+            <td class="cell--number">3</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">1.00</td>
+            <td class="cell--number">1.33</td>
             
           </tr>
         
@@ -110,7 +110,7 @@
             <td class="cell--number">14</td>
             <td class="cell--number">14</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">187.86</td>
+            <td class="cell--number">187.00</td>
             
           </tr>
         
@@ -121,7 +121,7 @@
             <td class="cell--number">13</td>
             <td class="cell--number">13</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">1961.77</td>
+            <td class="cell--number">1955.62</td>
             
           </tr>
         
@@ -143,7 +143,7 @@
             <td class="cell--number">12</td>
             <td class="cell--number">12</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">7.17</td>
+            <td class="cell--number">4.50</td>
             
           </tr>
         
@@ -166,6 +166,17 @@
             <td class="cell--number">11</td>
             <td class="cell--number">0</td>
             <td class="cell--number">1.00</td>
+            
+          </tr>
+        
+          <tr class="t-file">
+            <td class="strong t-file__name"><a href="#5cb4df42998149059ffcc2302d52359ac694477b" class="src_link" title="spec/features/vendors/show_spec.rb">spec/features/vendors/show_spec.rb</a></td>
+            <td class="red strong cell--number t-file__coverage">58.33 %</td>
+            <td class="cell--number">19</td>
+            <td class="cell--number">12</td>
+            <td class="cell--number">7</td>
+            <td class="cell--number">5</td>
+            <td class="cell--number">0.58</td>
             
           </tr>
         
@@ -286,8 +297,8 @@
     
 
     <div class="t-line-summary">
-      <b>5</b> relevant lines.
-      <span class="green"><b>5</b> lines covered</span> and
+      <b>7</b> relevant lines.
+      <span class="green"><b>7</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -371,12 +382,34 @@
 
             
 
-            <code class="ruby">    @market_facade = MoneyMarketFacade.new(params[:id])</code>
+            <code class="ruby">    market_facade = MoneyMarketFacade.new(params[:id])</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="8">
+          <li class="covered" data-hits="2" data-linenumber="8">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">    @market = market_facade.one_market</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="9">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">    @vendors = market_facade.vendors</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="10">
             
             
 
@@ -387,7 +420,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="9">
+          <li class="never" data-hits="" data-linenumber="11">
             
             
 
@@ -416,8 +449,8 @@
     
 
     <div class="t-line-summary">
-      <b>2</b> relevant lines.
-      <span class="green"><b>2</b> lines covered</span> and
+      <b>3</b> relevant lines.
+      <span class="green"><b>3</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -451,13 +484,13 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="3">
-            
-            
-
+          <li class="covered" data-hits="2" data-linenumber="3">
+            <span class="hits">2</span>
             
 
-            <code class="ruby">    </code>
+            
+
+            <code class="ruby">    @vendor = MoneyMarketFacade.new()</code>
           </li>
         </div>
       
@@ -537,8 +570,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="7" data-linenumber="3">
-            <span class="hits">7</span>
+          <li class="covered" data-hits="9" data-linenumber="3">
+            <span class="hits">9</span>
             
 
             
@@ -548,8 +581,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="7" data-linenumber="4">
-            <span class="hits">7</span>
+          <li class="covered" data-hits="9" data-linenumber="4">
+            <span class="hits">9</span>
             
 
             
@@ -658,8 +691,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="11" data-linenumber="14">
-            <span class="hits">11</span>
+          <li class="covered" data-hits="3" data-linenumber="14">
+            <span class="hits">3</span>
             
 
             
@@ -669,8 +702,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="11" data-linenumber="15">
-            <span class="hits">11</span>
+          <li class="covered" data-hits="3" data-linenumber="15">
+            <span class="hits">3</span>
             
 
             
@@ -964,8 +997,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="2550" data-linenumber="14">
-            <span class="hits">2550</span>
+          <li class="covered" data-hits="2542" data-linenumber="14">
+            <span class="hits">2542</span>
             
 
             
@@ -975,8 +1008,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="2550" data-linenumber="15">
-            <span class="hits">2550</span>
+          <li class="covered" data-hits="2542" data-linenumber="15">
+            <span class="hits">2542</span>
             
 
             
@@ -986,8 +1019,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="2550" data-linenumber="16">
-            <span class="hits">2550</span>
+          <li class="covered" data-hits="2542" data-linenumber="16">
+            <span class="hits">2542</span>
             
 
             
@@ -997,8 +1030,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="2550" data-linenumber="17">
-            <span class="hits">2550</span>
+          <li class="covered" data-hits="2542" data-linenumber="17">
+            <span class="hits">2542</span>
             
 
             
@@ -1008,8 +1041,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="2550" data-linenumber="18">
-            <span class="hits">2550</span>
+          <li class="covered" data-hits="2542" data-linenumber="18">
+            <span class="hits">2542</span>
             
 
             
@@ -1019,8 +1052,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="2550" data-linenumber="19">
-            <span class="hits">2550</span>
+          <li class="covered" data-hits="2542" data-linenumber="19">
+            <span class="hits">2542</span>
             
 
             
@@ -1030,8 +1063,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="2550" data-linenumber="20">
-            <span class="hits">2550</span>
+          <li class="covered" data-hits="2542" data-linenumber="20">
+            <span class="hits">2542</span>
             
 
             
@@ -1041,8 +1074,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="2550" data-linenumber="21">
-            <span class="hits">2550</span>
+          <li class="covered" data-hits="2542" data-linenumber="21">
+            <span class="hits">2542</span>
             
 
             
@@ -1052,8 +1085,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="2550" data-linenumber="22">
-            <span class="hits">2550</span>
+          <li class="covered" data-hits="2542" data-linenumber="22">
+            <span class="hits">2542</span>
             
 
             
@@ -1063,8 +1096,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="2550" data-linenumber="23">
-            <span class="hits">2550</span>
+          <li class="covered" data-hits="2542" data-linenumber="23">
+            <span class="hits">2542</span>
             
 
             
@@ -1378,8 +1411,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="20" data-linenumber="4">
-            <span class="hits">20</span>
+          <li class="covered" data-hits="12" data-linenumber="4">
+            <span class="hits">12</span>
             
 
             
@@ -1422,8 +1455,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="20" data-linenumber="8">
-            <span class="hits">20</span>
+          <li class="covered" data-hits="12" data-linenumber="8">
+            <span class="hits">12</span>
             
 
             
@@ -1433,8 +1466,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="20" data-linenumber="9">
-            <span class="hits">20</span>
+          <li class="covered" data-hits="12" data-linenumber="9">
+            <span class="hits">12</span>
             
 
             
@@ -1565,8 +1598,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="12" data-linenumber="21">
-            <span class="hits">12</span>
+          <li class="covered" data-hits="4" data-linenumber="21">
+            <span class="hits">4</span>
             
 
             
@@ -2304,7 +2337,7 @@
 
             
 
-            <code class="ruby">      expect(page.current_path).to eq(&quot;/vendors/55273&quot;)</code>
+            <code class="ruby">      expect(page.current_path).to eq(&quot;/markets/322500/vendors/55273&quot;)</code>
           </li>
         </div>
       
@@ -2332,6 +2365,246 @@
       
         <div>
           <li class="never" data-hits="" data-linenumber="18">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="5cb4df42998149059ffcc2302d52359ac694477b">
+  <div class="header">
+    <h3>spec/features/vendors/show_spec.rb</h3>
+    <h4>
+      <span class="red">
+  58.33%
+</span>
+
+      lines covered
+    </h4>
+
+    
+
+    <div class="t-line-summary">
+      <b>12</b> relevant lines.
+      <span class="green"><b>7</b> lines covered</span> and
+      <span class="red"><b>5</b> lines missed.</span>
+    </div>
+
+    
+
+  </div>
+
+  <pre>
+    <ol>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="1">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">require &quot;rails_helper&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="2">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="3">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">RSpec.describe &quot;Vendor Show Page&quot;, type: :feature do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="4">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  before(:each) do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="5">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    visit market_vendor_path(&quot;322474&quot;, &quot;55297&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="6">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="7">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="8">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  describe &quot;User Story 3 - Vendor Show Page&quot; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="9">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    it &quot;displays Vendor information&quot;, :vcr do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="10">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(page).to have_css(&quot;h1&quot;, text: &quot;Orange County Olive Oil&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="11">
+            
+            
+
+            
+
+            <code class="ruby">      expect(page).to have_content(&quot;Contact Info&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="12">
+            
+            
+
+            
+
+            <code class="ruby">      expect(page).to have_content(&quot;Name: Syble Hamill&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="13">
+            
+            
+
+            
+
+            <code class="ruby">      expect(page).to have_content(&quot;Phone: 1-276-593-3530&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="14">
+            
+            
+
+            
+
+            <code class="ruby">      expect(page).to have_content(&quot;Credit Accepted? NO&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="15">
+            
+            
+
+            
+
+            <code class="ruby">      expect(page).to have_content(&quot;Description: Handcrafted olive oil made from locally grown olives&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="16">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="17">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="18">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="19">
             
             
 
