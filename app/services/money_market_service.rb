@@ -20,4 +20,8 @@ class MoneyMarketService
   def self.get_market(id)
     get_url("/api/v0/markets/#{id}")
   end
+
+  def self.get_vendor(vendor_id)
+    get_url("api/v0/vendors/#{vendor_id}")
+  end
 end

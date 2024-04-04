@@ -87,5 +87,17 @@ RSpec.describe MoneyMarketService do
         end
       end
     end
+
+    describe ".get_vendor" do
+      it "returns data for a Vendor", :vcr do
+        vendor = MoneyMarketService.get_vendor("55297")
+
+        expect(vendor).to be_a(Hash)
+        expect(vendor[:data]).to be_a(Hash)
+        expect(vendor[:data].keys).to eq(@data_keys)
+        expect(vendor[:data][:attributes]).to be_a(Hash)
+        expect(vendor[:data][:attributes].keys).to eq(@attributes_keys)
+      end
+    end
   end
 end

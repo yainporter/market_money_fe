@@ -1,7 +1,8 @@
 class MoneyMarketFacade
-  def initialize(market_id = nil)
+  def initialize(market_id = nil, vendor_id = nil)
     @service = MoneyMarketService.new
     @market_id = market_id
+    @vendor_id = vendor_id
   end
 
   def all_markets
@@ -21,5 +22,11 @@ class MoneyMarketFacade
     vendors_data.map do |vendor|
       Vendor.new(vendor)
     end
+  end
+
+  def vendor
+    vendor_data = MoneyMarketService.get_vendor(@vendor_id)[:data]
+
+    Vendor.new(vendor_data)
   end
 end

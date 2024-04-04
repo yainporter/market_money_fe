@@ -2,7 +2,7 @@ require "rails_helper"
 
 RSpec.describe MoneyMarketFacade do
   before(:each) do
-    @money_market_facade = MoneyMarketFacade.new("322474")
+    @money_market_facade = MoneyMarketFacade.new("322474", "55297")
   end
 
   describe "#all_markets" do
@@ -33,6 +33,14 @@ RSpec.describe MoneyMarketFacade do
       vendors.each do |vendor|
         expect(vendor).to be_a(Vendor)
       end
+    end
+  end
+
+  describe "#vendor" do
+    it "turns Vendor data into a Vendor object", :vcr do
+      vendor = @money_market_facade.vendor
+
+      expect(vendor).to be_a(Vendor)
     end
   end
 end
