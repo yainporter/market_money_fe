@@ -37,219 +37,19 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 4f0fd71a-adda-4c04-9207-871827f410b5
+      - f849f281-fa03-40da-892a-75a6b0568bb0
       X-Runtime:
-      - '0.004620'
+      - '0.006500'
       Server-Timing:
-      - start_processing.action_controller;dur=0.00, sql.active_record;dur=0.48, instantiation.active_record;dur=0.03,
-        process_action.action_controller;dur=1.46
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=1.67, instantiation.active_record;dur=0.03,
+        process_action.action_controller;dur=2.96
       Content-Length:
       - '247'
     body:
       encoding: UTF-8
       string: '{"data":{"id":"322500","type":"market","attributes":{"name":"9th and
         Grand Farmers Market","street":"304 West Grand Avenue","city":"Salina","county":"Saline","state":"Kansas","zip":"67401","lat":"38.8528359","lon":"-97.6117504","vendor_count":6}}}'
-  recorded_at: Thu, 04 Apr 2024 16:02:53 GMT
-- request:
-    method: get
-    uri: http://localhost:3000/api/v0/markets/322500
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v2.9.0
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - '0'
-      X-Content-Type-Options:
-      - nosniff
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"8dfcf1b855e5f72068a19270c5f9db33"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 99686707-ab6e-45a8-8bf6-a640de073094
-      X-Runtime:
-      - '0.004374'
-      Server-Timing:
-      - start_processing.action_controller;dur=0.00, sql.active_record;dur=0.63, instantiation.active_record;dur=0.02,
-        process_action.action_controller;dur=1.39
-      Content-Length:
-      - '247'
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"322500","type":"market","attributes":{"name":"9th and
-        Grand Farmers Market","street":"304 West Grand Avenue","city":"Salina","county":"Saline","state":"Kansas","zip":"67401","lat":"38.8528359","lon":"-97.6117504","vendor_count":6}}}'
-  recorded_at: Thu, 04 Apr 2024 16:02:53 GMT
-- request:
-    method: get
-    uri: http://localhost:3000/api/v0/markets/322500
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v2.9.0
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - '0'
-      X-Content-Type-Options:
-      - nosniff
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"8dfcf1b855e5f72068a19270c5f9db33"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 8511d027-1297-41de-9427-fa3a76e7d143
-      X-Runtime:
-      - '0.004204'
-      Server-Timing:
-      - start_processing.action_controller;dur=0.00, sql.active_record;dur=0.65, instantiation.active_record;dur=0.01,
-        process_action.action_controller;dur=1.38
-      Content-Length:
-      - '247'
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"322500","type":"market","attributes":{"name":"9th and
-        Grand Farmers Market","street":"304 West Grand Avenue","city":"Salina","county":"Saline","state":"Kansas","zip":"67401","lat":"38.8528359","lon":"-97.6117504","vendor_count":6}}}'
-  recorded_at: Thu, 04 Apr 2024 16:02:53 GMT
-- request:
-    method: get
-    uri: http://localhost:3000/api/v0/markets/322500
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v2.9.0
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - '0'
-      X-Content-Type-Options:
-      - nosniff
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"8dfcf1b855e5f72068a19270c5f9db33"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 6a6fed53-a87e-4139-8385-b2ad30b57a0d
-      X-Runtime:
-      - '0.005289'
-      Server-Timing:
-      - start_processing.action_controller;dur=0.00, sql.active_record;dur=0.50, instantiation.active_record;dur=0.01,
-        process_action.action_controller;dur=1.26
-      Content-Length:
-      - '247'
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"322500","type":"market","attributes":{"name":"9th and
-        Grand Farmers Market","street":"304 West Grand Avenue","city":"Salina","county":"Saline","state":"Kansas","zip":"67401","lat":"38.8528359","lon":"-97.6117504","vendor_count":6}}}'
-  recorded_at: Thu, 04 Apr 2024 16:02:53 GMT
-- request:
-    method: get
-    uri: http://localhost:3000/api/v0/markets/322500
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v2.9.0
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - '0'
-      X-Content-Type-Options:
-      - nosniff
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"8dfcf1b855e5f72068a19270c5f9db33"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 8266f720-4538-43c1-8d75-f88bcf0978b1
-      X-Runtime:
-      - '0.004178'
-      Server-Timing:
-      - start_processing.action_controller;dur=0.00, sql.active_record;dur=0.35, instantiation.active_record;dur=0.01,
-        process_action.action_controller;dur=1.05
-      Content-Length:
-      - '247'
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"322500","type":"market","attributes":{"name":"9th and
-        Grand Farmers Market","street":"304 West Grand Avenue","city":"Salina","county":"Saline","state":"Kansas","zip":"67401","lat":"38.8528359","lon":"-97.6117504","vendor_count":6}}}'
-  recorded_at: Thu, 04 Apr 2024 16:02:53 GMT
+  recorded_at: Thu, 04 Apr 2024 16:39:10 GMT
 - request:
     method: get
     uri: http://localhost:3000/api/v0/markets/322500/vendors
@@ -287,12 +87,12 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - abf8ac07-3642-4575-ac05-71ebb08ad8f8
+      - c951cb56-cd27-4777-b69f-806bdd405c88
       X-Runtime:
-      - '0.005120'
+      - '0.005568'
       Server-Timing:
-      - start_processing.action_controller;dur=0.00, sql.active_record;dur=0.98, instantiation.active_record;dur=0.04,
-        process_action.action_controller;dur=1.87
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=1.24, instantiation.active_record;dur=0.05,
+        process_action.action_controller;dur=2.62
       Content-Length:
       - '1435'
     body:
@@ -311,5 +111,56 @@ http_interactions:
         Hilll","contact_phone":"739-690-1051","credit_accepted":true}},{"id":"55275","type":"vendor","attributes":{"name":"Crested
         Butte Cakes","description":"Homemade cakes and desserts from Crested Butte.","contact_name":"Estela
         Hayes","contact_phone":"1-469-220-1940","credit_accepted":true}}]}'
-  recorded_at: Thu, 04 Apr 2024 16:02:53 GMT
+  recorded_at: Thu, 04 Apr 2024 16:39:10 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v0/vendors/55273
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"33f2ef7b109661c82af6e82763bafd18"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 787381f3-4cd8-4322-8ab6-642b099335c2
+      X-Runtime:
+      - '0.003755'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.01, sql.active_record;dur=0.16, instantiation.active_record;dur=0.02,
+        process_action.action_controller;dur=0.68
+      Content-Length:
+      - '251'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"55273","type":"vendor","attributes":{"name":"Rocky Mountain
+        Oyster Company","description":"Unique snacks made from Colorado bull testicles.","contact_name":"Dr.
+        Christiana Kirlin","contact_phone":"436-727-1154","credit_accepted":true}}}'
+  recorded_at: Thu, 04 Apr 2024 16:39:10 GMT
 recorded_with: VCR 6.2.0
