@@ -11,7 +11,7 @@ RSpec.describe "Market Show Page", type: :feature do
       expect(all("a").count).to eq(6)
 
       click_link("Rocky Mountain Oyster Company")
-      expect(page.current_path).to eq("/markets/322500/vendors/55273")
+      expect(page.current_path).to eq("/vendors/55273")
     end
   end
 end

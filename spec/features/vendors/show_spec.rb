@@ -2,7 +2,7 @@ require "rails_helper"
 
 RSpec.describe "Vendor Show Page", type: :feature do
   before(:each) do
-    visit market_vendor_path("322474", "55297")
+    visit vendor_path("55297")
   end
 
   describe "User Story 3 - Vendor Show Page" do
