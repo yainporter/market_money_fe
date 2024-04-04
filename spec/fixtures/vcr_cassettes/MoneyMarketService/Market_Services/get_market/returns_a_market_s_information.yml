@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://localhost:3000/api/v0/vendors/55823
+    uri: http://localhost:3000/api/v0/markets/322500
     body:
       encoding: US-ASCII
       string: ''
@@ -33,22 +33,21 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"52a3a848e065d8df4195850a9c1f5377"
+      - W/"8dfcf1b855e5f72068a19270c5f9db33"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 35379eb8-2521-441d-8738-b467b41c079c
+      - 8e2f4481-2ec3-4eef-95c0-03f4e169d75c
       X-Runtime:
-      - '0.014144'
+      - '0.004898'
       Server-Timing:
-      - start_processing.action_controller;dur=0.00, sql.active_record;dur=4.69, instantiation.active_record;dur=0.03,
-        process_action.action_controller;dur=10.47
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=0.44, instantiation.active_record;dur=0.03,
+        process_action.action_controller;dur=1.55
       Content-Length:
-      - '262'
+      - '247'
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"55823","type":"vendor","attributes":{"name":"The Charcuterie
-        Corner","description":"Vendor selling a variety of artisanal cured meats and
-        sausages.","contact_name":"Claudie Langworth III","contact_phone":"1-147-179-9747","credit_accepted":false}}}'
-  recorded_at: Thu, 04 Apr 2024 03:43:54 GMT
+      string: '{"data":{"id":"322500","type":"market","attributes":{"name":"9th and
+        Grand Farmers Market","street":"304 West Grand Avenue","city":"Salina","county":"Saline","state":"Kansas","zip":"67401","lat":"38.8528359","lon":"-97.6117504","vendor_count":6}}}'
+  recorded_at: Thu, 04 Apr 2024 16:01:30 GMT
 recorded_with: VCR 6.2.0

@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://localhost:3000/api/v0/vendors/55823
+    uri: http://localhost:3000/api/v0/markets/322474
     body:
       encoding: US-ASCII
       string: ''
@@ -33,22 +33,21 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"52a3a848e065d8df4195850a9c1f5377"
+      - W/"24de0d2f904f643b0d3957a88ecf8ec5"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 72c999fb-16aa-4092-8d90-0a9cc8c637b1
+      - d70b7163-d32f-428f-ae06-55c14ba5e509
       X-Runtime:
-      - '0.005024'
+      - '0.005458'
       Server-Timing:
-      - start_processing.action_controller;dur=0.00, sql.active_record;dur=0.29, instantiation.active_record;dur=0.03,
-        process_action.action_controller;dur=1.11
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=0.80, instantiation.active_record;dur=0.03,
+        process_action.action_controller;dur=1.81
       Content-Length:
-      - '262'
+      - '244'
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"55823","type":"vendor","attributes":{"name":"The Charcuterie
-        Corner","description":"Vendor selling a variety of artisanal cured meats and
-        sausages.","contact_name":"Claudie Langworth III","contact_phone":"1-147-179-9747","credit_accepted":false}}}'
-  recorded_at: Thu, 04 Apr 2024 03:33:27 GMT
+      string: '{"data":{"id":"322474","type":"market","attributes":{"name":"2nd Street
+        Farmers'' Market","street":"194 second street","city":"Amherst","county":"Amherst","state":"Virginia","zip":"24521","lat":"37.583311","lon":"-79.048573","vendor_count":35}}}'
+  recorded_at: Thu, 04 Apr 2024 16:01:30 GMT
 recorded_with: VCR 6.2.0

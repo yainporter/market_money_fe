@@ -1,12 +1,12 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/yainporter/turing_work/3mod/projects/market_money_fe/app/facades/market_facade.rb": {
+      "/Users/yainporter/turing_work/3mod/projects/market_money_fe/app/facades/money_market_facade.rb": {
         "lines": [
           1,
           1,
-          6,
-          6,
+          7,
+          7,
           null,
           null,
           1,
@@ -16,60 +16,15 @@
           null,
           null,
           1,
+          11,
+          11,
+          null,
+          null,
+          1,
           3,
+          null,
           3,
-          null,
-          null
-        ]
-      },
-      "/Users/yainporter/turing_work/3mod/projects/market_money_fe/spec/facades/vendor_facade_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          1,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          1,
-          1,
-          1,
-          null,
-          1,
-          null,
-          1,
-          35,
-          null,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/yainporter/turing_work/3mod/projects/market_money_fe/app/facades/vendor_facade.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          1,
-          1,
-          null,
-          1,
-          35,
+          42,
           null,
           null,
           null
@@ -140,50 +95,6 @@
           null
         ]
       },
-      "/Users/yainporter/turing_work/3mod/projects/market_money_fe/spec/modules/serviceable_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          2,
-          2,
-          null,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          null,
-          1,
-          1,
-          1,
-          null,
-          1,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/yainporter/turing_work/3mod/projects/market_money_fe/app/modules/serviceable.rb": {
-        "lines": [
-          1,
-          1,
-          12,
-          null,
-          null,
-          1,
-          11,
-          11,
-          null,
-          null
-        ]
-      },
       "/Users/yainporter/turing_work/3mod/projects/market_money_fe/spec/poros/market_spec.rb": {
         "lines": [
           1,
@@ -244,16 +155,16 @@
           null,
           null,
           1,
-          2542,
-          2542,
-          2542,
-          2542,
-          2542,
-          2542,
-          2542,
-          2542,
-          2542,
-          2542,
+          2550,
+          2550,
+          2550,
+          2550,
+          2550,
+          2550,
+          2550,
+          2550,
+          2550,
+          2550,
           null,
           null
         ]
@@ -304,20 +215,21 @@
           null,
           null,
           1,
-          36,
-          36,
-          36,
-          36,
-          36,
-          36,
+          43,
+          43,
+          43,
+          43,
+          43,
+          43,
           null,
           null
         ]
       },
-      "/Users/yainporter/turing_work/3mod/projects/market_money_fe/spec/services/market_service_spec.rb": {
+      "/Users/yainporter/turing_work/3mod/projects/market_money_fe/spec/services/money_market_service_spec.rb": {
         "lines": [
           1,
           null,
+          1,
           1,
           1,
           2,
@@ -382,13 +294,44 @@
           1,
           null,
           null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
           null
         ]
       },
-      "/Users/yainporter/turing_work/3mod/projects/market_money_fe/app/services/market_service.rb": {
+      "/Users/yainporter/turing_work/3mod/projects/market_money_fe/app/services/money_market_service.rb": {
         "lines": [
           1,
+          null,
           1,
+          20,
+          null,
+          null,
+          1,
+          20,
+          20,
+          null,
           null,
           1,
           4,
@@ -397,59 +340,9 @@
           1,
           4,
           null,
-          null
-        ]
-      },
-      "/Users/yainporter/turing_work/3mod/projects/market_money_fe/spec/services/vendors_service_spec.rb": {
-        "lines": [
-          1,
           null,
           1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          1,
-          1,
-          1,
-          null,
-          1,
-          1,
-          1,
-          null,
-          1,
-          1,
-          1,
-          null,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/yainporter/turing_work/3mod/projects/market_money_fe/app/services/vendor_service.rb": {
-        "lines": [
-          1,
-          1,
-          null,
-          null,
-          null,
-          null,
-          null,
-          1,
-          2,
+          12,
           null,
           null
         ]
@@ -463,7 +356,6 @@
           null,
           1,
           2,
-          2,
           null,
           null
         ]
@@ -475,6 +367,6 @@
         ]
       }
     },
-    "timestamp": 1712241926
+    "timestamp": 1712246573
   }
 }
