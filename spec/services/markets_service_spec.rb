@@ -2,7 +2,8 @@ require "rails_helper"
 
 RSpec.describe MarketService do
   before(:each) do
-    @markets_service = MarketService.new
+    @market_keys = [:id, :type, :attributes, :relationships]
+    @attributes_keys = [:name, :street, :city, :county, :state, :zip, :lat, :lon, :vendor_count]
   end
 
   describe ".conn" do
@@ -36,16 +37,15 @@ RSpec.describe MarketService do
       expect(return_data[:data]).to be_an(Array)
 
       market_data = return_data[:data]
-      market_keys = [:id, :type, :attributes]
-      attributes_keys = [:name, :street, :city, :county, :state, :zip, :lat, :lon, :vendor_count]
+
 
       market_data.each do |market|
         expect(market).to be_a(Hash)
-        expect(market.keys).to eq(market_keys)
+        expect(market.keys).to eq(@market_keys)
         expect(market[:id]).to be_a(String)
         expect(market[:type]).to be_a(String)
         expect(market[:attributes]).to be_a(Hash)
-        expect(market[:attributes].keys).to eq(attributes_keys)
+        expect(market[:attributes].keys).to eq(@attributes_keys)
 
         attributes = market[:attributes]
         expect(attributes[:name]).to be_a(String)
@@ -67,6 +67,24 @@ RSpec.describe MarketService do
         attributes(attributes[:lat])
         attributes(attributes[:lon])
       end
+    end
+  end
+
+  describe "get_market" do
+    it "returns a market's information", :vcr do
+      market_data = MarketService.get_market("322500")
+
+      expect(market_data).to be_a(Hash)
+      expect(market_data.keys).to eq([:data])
+
+      market = market_data[:data]
+
+      expect(market).to be_a(Hash)
+      expect(market.keys).to eq(@market_keys)
+      expect(market[:id]).to be_a(String)
+      expect(market[:type]).to be_a(String)
+      expect(market[:attributes]).to be_a(Hash)
+      expect(market[:attributes].keys).to eq(@attributes_keys)
     end
   end
 end

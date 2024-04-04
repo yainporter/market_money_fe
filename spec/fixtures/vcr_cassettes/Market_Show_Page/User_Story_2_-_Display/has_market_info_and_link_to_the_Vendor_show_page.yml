@@ -1,0 +1,53 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/api/v0/markets/322500
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"b745e8ed92f561b0fe2f12f9e08863a7"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - a37f6011-b486-41c9-a0a3-f3eb87cce453
+      X-Runtime:
+      - '0.005407'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=0.68, instantiation.active_record;dur=0.02,
+        process_action.action_controller;dur=2.09
+      Content-Length:
+      - '472'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"322500","type":"market","attributes":{"name":"9th and
+        Grand Farmers Market","street":"304 West Grand Avenue","city":"Salina","county":"Saline","state":"Kansas","zip":"67401","lat":"38.8528359","lon":"-97.6117504","vendor_count":6},"relationships":{"vendors":{"data":[{"id":"55273","type":"vendor"},{"id":"55402","type":"vendor"},{"id":"56062","type":"vendor"},{"id":"55640","type":"vendor"},{"id":"56398","type":"vendor"},{"id":"55275","type":"vendor"}]}}}}'
+  recorded_at: Thu, 04 Apr 2024 00:48:55 GMT
+recorded_with: VCR 6.2.0

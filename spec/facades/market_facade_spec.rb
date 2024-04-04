@@ -2,7 +2,7 @@ require "rails_helper"
 
 RSpec.describe MarketFacade do
   before(:each) do
-    @market_facade = MarketFacade.new
+    @market_facade = MarketFacade.new("322458")
   end
 
   describe "#all_markets" do
@@ -13,6 +13,14 @@ RSpec.describe MarketFacade do
       market_objects.each do |market|
         expect(market).to be_a(Market)
       end
+    end
+  end
+
+  describe "#one_market" do
+    it "returns a Market object from the Service data", :vcr do
+      market = @market_facade.one_market
+
+      expect(market).to be_a(Market)
     end
   end
 end

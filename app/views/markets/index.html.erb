@@ -11,7 +11,7 @@
         <td><%= market.name %></td>
         <td><%= market.city %></td>
         <td><%= market.state %></td>
-        <td class="market-button"><%= button_to "More Info", market_path(market), method: :get  %></td>
+        <td class="market-button"><%= button_to "More Info", market_path(market.id), method: :get  %></td>
       </tr>
     <% end %>
   </table>
